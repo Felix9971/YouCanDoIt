@@ -63,8 +63,8 @@
 			children = (
 				C76DC60F2917F98F004E5894 /* YouCanDoItApp.swift */,
 				C76DC6112917F98F004E5894 /* ContentView.swift */,
-				D4CCDC96291B439F00633B3F /* GenreButtonStyle.swift */,
 				D4CCDC9C291BF1E600633B3F /* MoveInfoView.swift */,
+				D4CCDC96291B439F00633B3F /* GenreButtonStyle.swift */,
 				D4CCDC98291B5D7B00633B3F /* RoundedCorner.swift */,
 				D43728642919FE6400808173 /* Genre.swift */,
 				D4CCDC9A291B677600633B3F /* Movie.swift */,

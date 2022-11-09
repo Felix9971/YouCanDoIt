@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct MoveInfoView: View {
+    
     var body: some View {
+        
+        
        
-        ZStack{
+        ZStack(alignment: .top){
             //포스터 이미지
             Image("Poster0")
                 .resizable()
@@ -34,7 +37,7 @@ struct MoveInfoView: View {
                     .cornerRadius(8, corners: .bottomRight)
                     .cornerRadius(8, corners: .bottomLeft)
             }
-            .padding(.top, 265)
+            .padding(.top, 224)
             
             //하트
             Circle()
@@ -45,8 +48,7 @@ struct MoveInfoView: View {
                 .resizable()
                 .frame(width: 19.39, height: 17.93)
                 .foregroundColor(Color.PointRed)
-                .padding(.top, 205)
-            
+                .padding(.top,214)
         }
         
     }
