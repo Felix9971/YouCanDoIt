@@ -34,14 +34,14 @@ struct ContentView: View {
                 .padding(16)
                 
                 ScrollView{
-                    HStack(spacing: 22){
+                    HStack(alignment: .top, spacing: 22){
                         VStack(spacing: 16){
-                            MoveInfoView()
-                            MoveInfoView()
+                            MoveInfoView(movie: knivesOut)
+                            MoveInfoView(movie: theAmazingSpiderMan)
                         }
                         VStack(spacing: 16){
-                            MoveInfoView()
-                            MoveInfoView()
+                            MoveInfoView(movie: killYourDarlings)
+                            MoveInfoView(movie: tenet)
                         }
                     }
                 }
