@@ -18,36 +18,53 @@ struct ContentView: View {
     
     var body: some View {
         
-        ZStack{
-            Color.BackGoundBlue
-                .ignoresSafeArea()
-            
-            VStack{
-                ScrollView(.horizontal){
-                    Text("All")
-                        .font(.system(size: 14, weight: .black))
-                        .frame(width: 70, height: 32)
-                        .foregroundColor(Color.white)
-                        .background(Color.PointRed)
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
-                }
-                .padding(16)
+        NavigationView {
+            ZStack{
+                //배경
+                Color.BackGoundBlue
+                    .ignoresSafeArea()
                 
-                ScrollView{
-                    HStack(alignment: .top, spacing: 22){
-                        VStack(spacing: 16){
-                            MoveInfoView(movie: knivesOut)
-                            MoveInfoView(movie: theAmazingSpiderMan)
-                        }
-                        VStack(spacing: 16){
-                            MoveInfoView(movie: killYourDarlings)
-                            MoveInfoView(movie: tenet)
+                VStack{
+                    Text("Filog")
+                        .font(.system(size: 20, weight: .black))
+                        .foregroundColor(Color.white)
+                    
+                    //장르
+                    ScrollView(.horizontal){
+                        Text("All")
+                            .font(.system(size: 14, weight: .black))
+                            .frame(width: 70, height: 32)
+                            .foregroundColor(Color.white)
+                            .background(Color.PointRed)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                    .padding(10)
+                    
+                    //영화
+                    ScrollView{
+                        HStack(alignment: .top, spacing: 22){
+                            VStack(spacing: 16){
+                                NavigationLink(destination: MovieDetailView(movie: knivesOut)) {
+                                    MoveInfoView(movie: knivesOut)
+                                }
+                                NavigationLink(destination: MovieDetailView(movie: theAmazingSpiderMan)) {
+                                    MoveInfoView(movie: theAmazingSpiderMan)
+                                }
+                            }
+                            VStack(spacing: 16){
+                                NavigationLink(destination: MovieDetailView(movie: killYourDarlings)) {
+                                    MoveInfoView(movie: killYourDarlings)
+                                }
+                                NavigationLink(destination: MovieDetailView(movie: tenet)) {
+                                    MoveInfoView(movie: tenet)
+                                }
+
+                            }
                         }
                     }
                 }
             }
         }
-        
     }
 }
 
