@@ -9,6 +9,18 @@ import SwiftUI
 
 struct MovieDetailView: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+        var buttenBack : some View { Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Image(systemName: "chevron.backward")
+                    .resizable()
+                    .frame(width: 14, height: 21)
+                    .foregroundColor(Color.white)
+            }
+        }
+    
     var movie: Movie
     
     var body: some View {
@@ -23,21 +35,22 @@ struct MovieDetailView: View {
                 .resizable()
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .frame(width: 358, height: 528.48)
+                .padding(.top, 24)
             
             //하트
             Circle()
                 .frame(width: 76.71, height: 76.71)
                 .foregroundColor(Color.white)
-                .padding(.top, 435)
+                .padding(.top, 459)
             Rectangle()
                 .frame(width: 358, height: 130)
-                .padding(.top, 473)
+                .padding(.top, 497)
                 .foregroundColor(Color.white)
             Image(systemName: movie.heart)
                 .resizable()
                 .frame(width: 42, height: 38)
                 .foregroundColor(Color.PointRed)
-                .padding(.top, 452)
+                .padding(.top, 476)
             
             //영화 제목, 부제목
             VStack{
@@ -55,9 +68,21 @@ struct MovieDetailView: View {
                     .cornerRadius(8, corners: .bottomRight)
                     .cornerRadius(8, corners: .bottomLeft)
             }
-            .padding(.top, 490)
+            .padding(.top, 514)
             
         }
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading) {
+                buttenBack
+            }
+            ToolbarItem(placement: .principal){
+                Text("Filog")
+                    .font(.system(size: 20, weight: .black))
+                    .foregroundColor(Color.white)
+            }
+        }
+        .navigationBarBackButtonHidden()
+        
         
     }
 }
