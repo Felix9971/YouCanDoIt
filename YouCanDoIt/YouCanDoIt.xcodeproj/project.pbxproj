@@ -17,6 +17,7 @@
 		D4CCDC9B291B677600633B3F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CCDC9A291B677600633B3F /* Movie.swift */; };
 		D4CCDC9D291BF1E600633B3F /* MoveInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CCDC9C291BF1E600633B3F /* MoveInfoView.swift */; };
 		D4CCDC9F291DDCEB00633B3F /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CCDC9E291DDCEB00633B3F /* MovieDetailView.swift */; };
+		D4CCDCA12921450B00633B3F /* GenreButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CCDCA02921450B00633B3F /* GenreButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D4CCDC9A291B677600633B3F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D4CCDC9C291BF1E600633B3F /* MoveInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveInfoView.swift; sourceTree = "<group>"; };
 		D4CCDC9E291DDCEB00633B3F /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		D4CCDCA02921450B00633B3F /* GenreButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,9 @@
 			children = (
 				C76DC60F2917F98F004E5894 /* YouCanDoItApp.swift */,
 				C76DC6112917F98F004E5894 /* ContentView.swift */,
-				D4CCDC9C291BF1E600633B3F /* MoveInfoView.swift */,
 				D4CCDC9E291DDCEB00633B3F /* MovieDetailView.swift */,
+				D4CCDC9C291BF1E600633B3F /* MoveInfoView.swift */,
+				D4CCDCA02921450B00633B3F /* GenreButtonView.swift */,
 				D4CCDC96291B439F00633B3F /* GenreButtonStyle.swift */,
 				D43728642919FE6400808173 /* Genre.swift */,
 				D4CCDC9A291B677600633B3F /* Movie.swift */,
@@ -158,6 +161,7 @@
 				D4CCDC97291B439F00633B3F /* GenreButtonStyle.swift in Sources */,
 				D43728652919FE6400808173 /* Genre.swift in Sources */,
 				D4CCDC9D291BF1E600633B3F /* MoveInfoView.swift in Sources */,
+				D4CCDCA12921450B00633B3F /* GenreButtonView.swift in Sources */,
 				D4CCDC9B291B677600633B3F /* Movie.swift in Sources */,
 				D4CCDC99291B5D7B00633B3F /* RoundedCorner.swift in Sources */,
 				C76DC6122917F98F004E5894 /* ContentView.swift in Sources */,

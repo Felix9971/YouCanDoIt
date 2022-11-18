@@ -31,12 +31,15 @@ struct ContentView: View {
                     
                     //장르
                     ScrollView(.horizontal){
-                        Text("All")
-                            .font(.system(size: 14, weight: .black))
-                            .frame(width: 70, height: 32)
-                            .foregroundColor(Color.white)
-                            .background(Color.PointRed)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                        HStack{
+                            GenreButtonView(genre: all)
+                            GenreButtonView(genre: scifi)
+                            GenreButtonView(genre: action)
+                            GenreButtonView(genre: drama)
+                            GenreButtonView(genre: thriller)
+                            GenreButtonView(genre: music)
+                            GenreButtonView(genre: adventure)
+                        }
                     }
                     .padding(10)
                     
