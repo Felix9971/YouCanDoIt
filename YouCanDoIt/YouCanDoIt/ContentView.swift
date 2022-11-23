@@ -13,9 +13,6 @@ extension Color {
 }
 
 struct ContentView: View {
-    
-    var genres: [Genre] = genreData
-    
     var body: some View {
         
         NavigationView {
@@ -32,13 +29,7 @@ struct ContentView: View {
                     //장르
                     ScrollView(.horizontal){
                         HStack{
-                            GenreButtonView(genre: all)
-                            GenreButtonView(genre: scifi)
-                            GenreButtonView(genre: action)
-                            GenreButtonView(genre: drama)
-                            GenreButtonView(genre: thriller)
-                            GenreButtonView(genre: music)
-                            GenreButtonView(genre: adventure)
+                           GenreButtonView()
                         }
                     }
                     .padding(10)
